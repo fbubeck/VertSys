@@ -19,9 +19,6 @@ public class Hersteller implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id;
 
-    @ManyToOne
-    private Fahrrad fahrrad;
-
     @Column(length = 100)
     @NotNull(message = "Name muss vergeben werden")
     @Size(min=1, max=100)

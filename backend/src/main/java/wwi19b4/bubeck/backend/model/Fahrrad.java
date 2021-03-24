@@ -22,6 +22,9 @@ public class Fahrrad implements Serializable {
     @ManyToOne
     private Fahrradshop fahrradshop;
 
+    @ManyToOne
+    private Hersteller hersteller;
+
     @Column(length = 100)
     @NotNull(message = "Modell muss vergeben werden")
     @Size(min=1, max=100)
