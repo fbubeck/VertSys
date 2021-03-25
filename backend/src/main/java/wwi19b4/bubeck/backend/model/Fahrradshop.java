@@ -8,6 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -30,5 +32,8 @@ public class Fahrradshop implements Serializable {
     private String adresse = "";
 
     private long anzahlMitarbeiter = 0;
+
+    @OneToMany(mappedBy = "fahrradshop", cascade = {CascadeType.REMOVE})
+    List<Fahrrad> fahrräder = new ArrayList<>();
 
 }
