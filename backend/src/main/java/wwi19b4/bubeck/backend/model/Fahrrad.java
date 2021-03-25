@@ -33,5 +33,4 @@ public class Fahrrad implements Serializable {
 
     @Column(length = 100)
     private String typ = "";
-
 }
