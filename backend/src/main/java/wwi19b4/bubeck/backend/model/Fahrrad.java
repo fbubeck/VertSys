@@ -8,6 +8,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -21,9 +23,6 @@ public class Fahrrad implements Serializable {
 
     @ManyToOne
     private Fahrradshop fahrradshop;
-
-    @ManyToOne
-    private Hersteller hersteller;
 
     @Column(length = 100)
     @NotNull(message = "Modell muss vergeben werden")

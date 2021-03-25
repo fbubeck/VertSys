@@ -31,5 +31,4 @@ public class Fahrradshop implements Serializable {
 
     private long anzahlMitarbeiter = 0;
 
-
 }

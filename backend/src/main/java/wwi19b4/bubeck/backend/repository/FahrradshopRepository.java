@@ -8,6 +8,5 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "Fahrradshop", path="fahrradshop")
 public interface FahrradshopRepository extends PagingAndSortingRepository<Fahrradshop, Long> {
-
     List<Fahrradshop> findByNameContains(String name);
 }
