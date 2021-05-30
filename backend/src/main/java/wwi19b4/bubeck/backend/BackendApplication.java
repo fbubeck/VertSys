@@ -3,6 +3,7 @@ package wwi19b4.bubeck.backend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+//Hauptklasse für die Lauffähigkeit des Services
 @SpringBootApplication
 public class BackendApplication {
 
