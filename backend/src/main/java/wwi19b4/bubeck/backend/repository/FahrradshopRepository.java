@@ -6,6 +6,7 @@ import wwi19b4.bubeck.backend.model.Fahrradshop;
 
 import java.util.List;
 
+//Repository Interface  für Fahrradshops
 @RepositoryRestResource(collectionResourceRel = "Fahrradshop", path="fahrradshop")
 public interface FahrradshopRepository extends PagingAndSortingRepository<Fahrradshop, Long> {
     List<Fahrradshop> findByNameContains(String name);
